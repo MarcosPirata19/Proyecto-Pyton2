@@ -83,61 +83,143 @@ def main():
 
     # Botones numéricos
     boton_1 = tk.Button(
-        ventana, text="1", padx=40, pady=20, command=lambda: boton_click(1)
+        ventana,
+        text="1",
+        padx=40,
+        pady=20,
+        command=lambda: boton_click(1),
+        bg="lightblue",
     )
     boton_2 = tk.Button(
-        ventana, text="2", padx=40, pady=20, command=lambda: boton_click(2)
+        ventana,
+        text="2",
+        padx=40,
+        pady=20,
+        command=lambda: boton_click(2),
+        bg="lightblue",
     )
     boton_3 = tk.Button(
-        ventana, text="3", padx=40, pady=20, command=lambda: boton_click(3)
+        ventana,
+        text="3",
+        padx=40,
+        pady=20,
+        command=lambda: boton_click(3),
+        bg="lightblue",
     )
     boton_4 = tk.Button(
-        ventana, text="4", padx=40, pady=20, command=lambda: boton_click(4)
+        ventana,
+        text="4",
+        padx=40,
+        pady=20,
+        command=lambda: boton_click(4),
+        bg="lightblue",
     )
     boton_5 = tk.Button(
-        ventana, text="5", padx=40, pady=20, command=lambda: boton_click(5)
+        ventana,
+        text="5",
+        padx=40,
+        pady=20,
+        command=lambda: boton_click(5),
+        bg="lightblue",
     )
     boton_6 = tk.Button(
-        ventana, text="6", padx=40, pady=20, command=lambda: boton_click(6)
+        ventana,
+        text="6",
+        padx=40,
+        pady=20,
+        command=lambda: boton_click(6),
+        bg="lightblue",
     )
     boton_7 = tk.Button(
-        ventana, text="7", padx=40, pady=20, command=lambda: boton_click(7)
+        ventana,
+        text="7",
+        padx=40,
+        pady=20,
+        command=lambda: boton_click(7),
+        bg="lightblue",
     )
     boton_8 = tk.Button(
-        ventana, text="8", padx=40, pady=20, command=lambda: boton_click(8)
+        ventana,
+        text="8",
+        padx=40,
+        pady=20,
+        command=lambda: boton_click(8),
+        bg="lightblue",
     )
     boton_9 = tk.Button(
-        ventana, text="9", padx=40, pady=20, command=lambda: boton_click(9)
+        ventana,
+        text="9",
+        padx=40,
+        pady=20,
+        command=lambda: boton_click(9),
+        bg="lightblue",
     )
     boton_0 = tk.Button(
-        ventana, text="0", padx=40, pady=20, command=lambda: boton_click(0)
+        ventana,
+        text="0",
+        padx=40,
+        pady=20,
+        command=lambda: boton_click(0),
+        bg="lightblue",
     )
     # Botón para el punto decimal
     boton_punto = tk.Button(
-        ventana, text=".", padx=41, pady=20, command=lambda: boton_click(".")
+        ventana,
+        text=".",
+        padx=41,
+        pady=20,
+        command=lambda: boton_click("."),
+        bg="lightblue",
     )
 
     # Botones de operaciones
     boton_suma = tk.Button(
-        ventana, text="+", padx=39, pady=20, command=lambda: boton_operacion("+")
+        ventana,
+        text="+",
+        padx=39,
+        pady=20,
+        command=lambda: boton_operacion("+"),
+        bg="lightgreen",
     )
     boton_resta = tk.Button(
-        ventana, text="-", padx=41, pady=20, command=lambda: boton_operacion("-")
+        ventana,
+        text="-",
+        padx=41,
+        pady=20,
+        command=lambda: boton_operacion("-"),
+        bg="lightgreen",
     )
     boton_multi = tk.Button(
-        ventana, text="*", padx=39, pady=20, command=lambda: boton_operacion("*")
+        ventana,
+        text="*",
+        padx=39,
+        pady=20,
+        command=lambda: boton_operacion("*"),
+        bg="lightgreen",
     )
     boton_division = tk.Button(
-        ventana, text="/", padx=41, pady=20, command=lambda: boton_operacion("/")
+        ventana,
+        text="/",
+        padx=41,
+        pady=20,
+        command=lambda: boton_operacion("/"),
+        bg="lightgreen",
     )
-    boton_igual = tk.Button(ventana, text="=", padx=40, pady=60, command=boton_igual)
+    boton_igual = tk.Button(
+        ventana, text="=", padx=40, pady=20, command=boton_igual, bg="orange"
+    )
 
     # Botones de borrar y limpiar
     boton_borra = tk.Button(
-        ventana, text="Borrar", padx=39, pady=20, command=boton_borrar
+        ventana, text="Borrar", padx=39, pady=20, command=boton_borrar, bg="lightcoral"
     )
     boton_limpia = tk.Button(
-        ventana, text="Limpiar", padx=41, pady=20, command=boton_limpiar
+        ventana,
+        text="Limpiar",
+        padx=41,
+        pady=20,
+        command=boton_limpiar,
+        bg="lightcoral",
     )
 
     # Colocar los botones en la cuadrícula
@@ -151,12 +233,12 @@ def main():
     boton_8.grid(row=3, column=1)
     boton_9.grid(row=3, column=2)
     boton_0.grid(row=4, column=0)
-    boton_punto.grid(row=4, column=2)
+    boton_punto.grid(row=5, column=2)
     boton_suma.grid(row=4, column=1)
     boton_resta.grid(row=4, column=2)
     boton_multi.grid(row=5, column=0)
     boton_division.grid(row=5, column=1)
-    boton_igual.grid(row=5, column=2, rowspan=2)
+    boton_igual.grid(row=6, column=2, rowspan=2)
 
     # Colocar los botones en la cuadrícula
     # ... (resto de los botones)
