@@ -1,5 +1,0 @@
-[Desktop Entry]
-Name=Calculadora
-Exec=python3 /home/marcos/ProyectoPython2/calculadora.py
-Type=Application
-Terminal=false
